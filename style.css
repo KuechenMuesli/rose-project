@@ -4,6 +4,7 @@ body {
   color: white; 
   font-family: sans-serif; 
 }
+
 #webgl { 
   position: fixed; 
   top: 0; 
@@ -11,13 +12,18 @@ body {
   z-index: -1; 
   outline: none; 
 }
+
 .spacer {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   pointer-events: none;
+
+  text-align: center;
+  padding: 0 20px;
 }
+
