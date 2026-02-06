@@ -53,6 +53,8 @@ loader.load("rose.glb", (gltf) => {
   const model_scale = 20;
   model.scale.set(model_scale, model_scale, model_scale); 
   model.position.y = -2;
+
+  model.rotation.set(0.3, -2.3, 0);
   scene.add(model);
 
   // 6. DIREKTE SCROLL-STEUERUNG (Ohne Mixer/Action)
@@ -84,7 +86,7 @@ function animate() {
   
   // Kontinuierliche Drehung
   if (model) {
-    model.rotation.y += 0.002;
+    // model.rotation.y += 0.002;
   }
   
   renderer.render(scene, camera);
