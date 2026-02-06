@@ -1,0 +1,8 @@
+{
+  "name": "rose-3d",
+  "compatibility_date": "2026-02-06",
+  "site": {
+    "bucket": "./",
+    "include": ["*.html", "*.js", "*.css", "*.glb", "images/**"]
+  }
+}
