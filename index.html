@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Rose Scroll</title>
+  <style>
+    body { 
+      margin: 0; 
+      background-color: #000; 
+      color: white; 
+      font-family: sans-serif; 
+    }
+    #webgl { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      z-index: -1; 
+      outline: none; 
+    }
+    .spacer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      pointer-events: none; /* Allows scrolling through text */
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <canvas id="webgl"></canvas>
+
+  <section class="spacer">Scroll to Bloom</section>
+  <section class="spacer">Keep Going...</section>
+  <section class="spacer">Full Bloom</section>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
