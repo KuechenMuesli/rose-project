@@ -1,16 +1,16 @@
-body { 
-  margin: 0; 
-  background-color: #e6c7bc; 
-  color: white; 
-  font-family: sans-serif; 
+body {
+  margin: 0;
+  background-color: #e6c7bc;
+  color: white;
+  font-family: sans-serif;
 }
 
-#webgl { 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  z-index: -1; 
-  outline: none; 
+#webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  outline: none;
 }
 
 .spacer {
@@ -30,4 +30,25 @@ body {
 
 .scroll-container {
   position: relative;
+}
+
+
+.image-grid {
+  display: block;
+  column-count: 2;
+  column-gap: 0;
+  width: 100%;
+  background-color: #e6c7bc;
+}
+
+.image-grid img {
+  width: 100%;
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.after-images {
+  background-color: #e6c7bc;
+  z-index: 1000;
 }
