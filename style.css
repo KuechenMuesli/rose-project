@@ -27,3 +27,7 @@ body {
   padding: 0 20px;
 }
 
+
+.scroll-container {
+  position: relative;
+}
