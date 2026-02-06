@@ -1,0 +1,6 @@
+name = "hab-dich-lieb"
+compatibility_date = "2026-02-06"
+
+[site]
+bucket = "."
+include = ["*.html", "*.js", "*.css", "*.glb", "images/**"]
