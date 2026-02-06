@@ -57,13 +57,13 @@ loader.load("rose.glb", (gltf) => {
   model.rotation.set(0.3, -2.3, 0);
   scene.add(model);
 
-  // 6. DIREKTE SCROLL-STEUERUNG (Ohne Mixer/Action)
+  // 6. SCROLL-STEUERUNG
   gsap.to({}, {
     scrollTrigger: {
       trigger: "body",
       start: "top top",
-      end: "bottom bottom",
-      scrub: 0.5, // Weiches Nachlaufen
+      end: "+=3500vh",
+      scrub: 0.5,
       onUpdate: (self) => {
         if (model) {
           // Wir gehen durch das Modell und setzen den Morph-Wert manuell
