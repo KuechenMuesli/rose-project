@@ -29,7 +29,7 @@ let finished = false;
 let floatTime = 0;
 
 const loader = new GLTFLoader();
-loader.load("rose.glb", (gltf) => {
+loader.load("rose_small_leaves.glb", (gltf) => {
 	model = gltf.scene;
 
 	model.traverse((child) => {
